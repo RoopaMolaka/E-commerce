@@ -1,0 +1,19 @@
+
+body{
+  background-color: rgb(232, 224, 224);  
+}
+#div-wrapper{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+
+}
+#card-wrapper{
+   width: calc(25% - 32px);
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow:5px 5px 5px #87030333;
+}
