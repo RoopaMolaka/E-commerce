@@ -1,33 +1,37 @@
 import React from 'react';
 import cheerful from "../pics/cheerful-happy-woman-enjoying-shopping-600nw-1417347668.webp";
-import family from"../pics/istockphoto-1132216826-612x612.jpg";
+import accessories from"../pics/istockphoto-1132216826-612x612.jpg";
 import man from "../pics/pic1.avif"
-import"./index"
+import"./index.css"
 
 function Home() {
   return (
     <>
-   <div id="carouselexample" className="carousel slide  height">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={family} className="d-block w-100" alt="broken-image"/>
+    <div className='d-flex flex-wrap mt-4 home-div-wrapper'>
+      <div className='home-card-wrapper'>
+        <img className='home-image-thumbnail' src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-07122023-BESTSELLERSECTION-Menswesters-upto80.jpg"/>
+      </div>
+      <div  className='home-card-wrapper'>
+      <img className='home-image-thumbnail' src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-07122023-BESTSELLERSECTION-accessories-upto80.jpg"/>
+      
+      </div>
+      <div  className='home-card-wrapper'>
+      <img className='home-image-thumbnail' src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-07122023-BESTSELLERSECTION-womenswestern-starting249.jpg"/>
+
+      </div>
     </div>
-    <div className="carousel-item">
-      <img src={cheerful} className="d-block w-100" alt="broken-image"/>
+    <div className='d-flex flex-wrap mt-4 home-div-wrapper'>
+      <div className='home-card-wrapper'>
+        <img className='home-image-thumbnail' src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-07122023-SPONSORBRANDSTILES-veromoda-min60.jpg"/>
+      </div>
+      <div  className='home-card-wrapper'>
+      <img className='home-image-thumbnail' src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-07122023-SPONSORBRANDSTILES-mothercare-min50.jpg"/>
+      </div>
+      <div  className='home-card-wrapper'>
+      <img className='home-image-thumbnail' src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-07122023-SPONSORBRANDSTILES-addias-min50.jpg"/>
+
+      </div>
     </div>
-    <div className="carousel-item">
-      <img src={man} className="d-block w-100" alt="broken-image"/>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselexample" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselexample" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
     </>
   )
 }

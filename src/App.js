@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import ProductList from './Products/productList';
-import { BrowserRouter, Route, Routes, useSearchParams } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import Cart from './Cart/cart';
 import Home from './Home';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import "./App.css"
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -41,7 +41,7 @@ const[filterpoducts,setfilterpoducts] = useState("")
  onClick={()=>{navigate("/ProductList")}}  />
           </div>
           <div>
-            <button className="btn px-4" onClick={()=>{navigate("/Cart")}}  ><i class="fa-solid fa-cart-shopping" ></i> Cart <span className='border border-1 rounded-3 px-2'>{ uniqueItemCount}</span></button>
+            <button className="btn px-3" onClick={()=>{navigate("/Cart")}}  ><i class="fa-solid fa-cart-shopping" ></i> Cart <span className='border border-1 rounded-3 px-3 ms-2'>{ uniqueItemCount}</span></button>
             
           </div>
         </div>
